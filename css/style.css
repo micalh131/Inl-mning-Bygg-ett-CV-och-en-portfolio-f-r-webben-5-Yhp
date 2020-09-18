@@ -68,7 +68,7 @@ h1::after {
 /* ---------------------------------------- */
 
 header {
-  background-image: url("/img/ningyu-he-tb49PTdW1ZM-unsplash.jpg");
+  background-image: url("../img/ningyu-he-tb49PTdW1ZM-unsplash.jpg");
   background-size: cover;
   height: 100vh;
 }
