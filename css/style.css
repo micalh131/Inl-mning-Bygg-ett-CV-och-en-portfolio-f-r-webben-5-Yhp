@@ -1,0 +1,320 @@
+#screen-shower {
+  background: red;
+  color: #fff;
+  width: 100%;
+  padding: 1em;
+  grid-area: screenshower;
+}
+
+#screen-shower::after {
+  content: "(<768px) Tablet And Small Desktop Layout (old standard)";
+}
+
+/* ---------------------------------------- */
+/* BASIC SETUP */
+/* ---------------------------------------- */
+
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+body {
+  overflow-x: hidden !important;
+  background-color: rgb(97, 97, 97);
+  color: white !important;
+  height: 100%;
+  padding: 0;
+  font-family: "Playfair Display", serif;
+}
+
+h1 {
+  font-size: 1.4em;
+  text-transform: uppercase;
+  color: #f2b291;
+}
+
+h2 {
+  color: #f7c5b5;
+}
+
+h2,
+h1 {
+  text-align: center;
+}
+
+p {
+  text-align: justify;
+  font-size: 1.1em;
+  color: #f5dfd7;
+  letter-spacing: 0.05em;
+  line-height: 150%;
+}
+
+h1::after {
+  content: "";
+  display: block;
+  margin: 0 auto;
+  width: 2%;
+  text-align: center;
+  padding-top: 30px;
+  border-bottom: 2px solid gray;
+}
+
+/* ---------------------------------------- */
+/* HEADER */
+/* ---------------------------------------- */
+
+header {
+  background-image: url("/img/ningyu-he-tb49PTdW1ZM-unsplash.jpg");
+  background-size: cover;
+  height: 100vh;
+}
+
+.logo {
+  margin-top: 9em;
+}
+
+.logo h1 {
+  color: #fff !important;
+  font-size: 2.3em;
+}
+
+/* Links */
+
+a:link,
+a:visited {
+  color: #db937b;
+  padding-bottom: 1px;
+  border-bottom: 1px solid #db937b;
+  -webkit-transition: border-bottom 0.2s, color 0.2s;
+  transition: border-bottom 0.2s, color 0.2s;
+}
+
+a:hover,
+a:active {
+  color: lightgray;
+  border-bottom: 1px solid transparent;
+  text-decoration: none;
+}
+
+/* ---------------------------------------- */
+/* NAVBAR */
+/* ---------------------------------------- */
+
+.navbar-nav {
+  text-transform: uppercase;
+  font-weight: 900;
+  font-size: 0.9em;
+}
+
+/* Makes nav transparent */
+.bg-dark {
+  opacity: 0.5 !important;
+}
+
+/*Makes first nav icons inside slide nav orange, have to targes everyone*/
+.navbar-dark .navbar-nav .active > .nav-link,
+.navbar-dark .navbar-nav .nav-link.active,
+.navbar-dark .navbar-nav .nav-link.show,
+.navbar-dark .navbar-nav .show > .nav-link {
+  color: #ffb84d !important;
+}
+
+/*Makes main nav icons and second slide nav orange, have to targes everyone*/
+.navbar-dark .navbar-nav .nav-link {
+  color: #ffb84d !important;
+}
+
+/*Makes third and fouth nav icons in second slide nav orange, have to targes everyone*/
+.nav-link.disabled {
+  color: #ffb84d !important;
+}
+
+/* ---------------------------------------- */
+/* Main */
+/* ---------------------------------------- */
+
+#about,
+#gallery,
+#tour,
+#discography,
+#contact {
+  outline: 0 none;
+}
+
+#about,
+#discography,
+#gallery {
+  margin-top: 100px;
+  margin-bottom: 150px;
+}
+
+/* Portfolio */
+
+#portfolio {
+  margin-top: 150px;
+  margin-bottom: 0;
+}
+
+.table {
+  margin-top: 10%;
+  color: #e3b2a1;
+}
+
+/* Discoraphy */
+
+#discography iframe {
+  margin-top: 40px;
+}
+
+/* About */
+
+#about_undertitle {
+  margin-top: 5%;
+}
+
+.column_margin {
+  margin-top: 5%;
+}
+
+#about img,
+#portfolio img {
+  height: 300px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 250px;
+}
+
+/* Contact */
+
+.last-content {
+  margin-top: 5%;
+  text-align: center;
+}
+
+.last-content p {
+  text-align: center;
+}
+
+.last-content i {
+  color: gray;
+}
+
+/* =================================
+  Slideshow
+==================================== */
+
+#slideshow_1,
+#slideshow_2 {
+  margin: 80px auto;
+  position: relative;
+  width: 90%;
+  height: 340px;
+  padding: 10px;
+}
+
+#slideshow_1 > div,
+#slideshow_2 > div {
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  right: 10px;
+  bottom: 10px;
+}
+
+.no_padding_left {
+  padding-left: 0 !important;
+  margin-top: -5%;
+}
+
+/* IMG*/
+
+.image1 {
+  background-image: url("../img/kobu-agency-ipARHaxETRk-unsplash.jpg");
+}
+
+.image2 {
+  background-image: url("../img/markus-spiske-1LLh8k2_YFk-unsplash.jpg");
+}
+
+.image3 {
+  background-image: url("../img/jantine-doornbos-xt9tb6oa42o-unsplash.jpg");
+}
+
+.image4 {
+  background-image: url("../img/irvan-smith-cwqG1N1AtI0-unsplash.jpg");
+}
+
+.image5 {
+  background-image: url("../img/greg-rakozy-vw3Ahg4x1tY-unsplash.jpg");
+}
+
+.image6 {
+  background-image: url("../img/goran-ivos-iacpoKgpBAM-unsplash.jpg");
+}
+
+.image {
+  background-size: cover;
+  width: 100%;
+  border-radius: 3px;
+}
+
+.profile-image {
+  width: 200px !important;
+}
+
+/* =================================
+  Media Queries
+==================================== */
+
+@media (min-width: 576px) {
+  body {
+    font-size: 1.2em;
+  }
+
+  .logo {
+    margin-top: 4.5em;
+  }
+
+  p {
+    font-size: 1em;
+  }
+}
+
+@media (min-width: 768px) {
+  .logo {
+    margin-top: 5em;
+  }
+
+  #gigs {
+    font-size: 1.2em;
+  }
+
+  #portfolio {
+    margin-top: 40px;
+  }
+}
+
+@media (min-width: 992px) {
+  body {
+    font-size: 1.2em;
+  }
+
+  .logo {
+    margin-top: 5.5em;
+  }
+}
+
+@media (min-width: 1200px) {
+  .logo {
+    margin-top: 6em;
+  }
+
+  body {
+    font-size: 1.3em;
+  }
+}
